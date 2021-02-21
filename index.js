@@ -9,9 +9,9 @@ const HOST = `http://localhost:${PORT}`;
 const app = express();
 app.use(cors());
 // const __dirname = path.resolve();
-app.use("/static", express.static(path.resolve(__dirname, "public")));
+app.use("/", express.static(path.resolve(__dirname, "public")));
 console.log("")
-app.get("/catalog", (request, response) => {
+app.get("/", (request, response) => {
   const musics = [
     {
       artist: "Deep Purple",
