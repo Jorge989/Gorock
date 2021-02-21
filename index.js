@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 // const __dirname = path.resolve();
 app.use("/static", express.static(path.resolve(__dirname, "public")));
-
+console.log("")
 app.get("/catalog", (request, response) => {
   const musics = [
     {
