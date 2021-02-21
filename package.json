@@ -7,6 +7,9 @@
     "start": "node dist/index.js",
     "dev": "sucrase-node index.js"
   },
+  "scripts": {
+    "build": "npm run dev ./index.js" 
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
